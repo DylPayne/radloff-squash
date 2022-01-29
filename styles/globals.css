@@ -1,3 +1,41 @@
+@import url("https://p.typekit.net/p.css?s=1&k=wje0ygh&ht=tk&f=26065&a=3147774&app=typekit&e=css");
+
+@font-face {
+  font-family: "acumin-pro";
+  src: url("https://use.typekit.net/af/b27b16/00000000000000003b9acaf0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/b27b16/00000000000000003b9acaf0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/b27b16/00000000000000003b9acaf0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@import url("https://p.typekit.net/p.css?s=1&k=amv6gqu&ht=tk&f=28873&a=95434899&app=typekit&e=css");
+
+@font-face {
+  font-family: "bungee";
+  src: url("https://use.typekit.net/af/ac34da/00000000000000007735b230/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ac34da/00000000000000007735b230/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ac34da/00000000000000007735b230/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.tk-bungee {
+  font-family: "bungee", sans-serif;
+}
+
+.tk-acumin-pro {
+  font-family: "acumin-pro", sans-serif;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +51,35 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: bungee, sans-serif;
+}
+h2 {
+  font-family: bungee, sans-serif;
+}
+
+/* Animated links */
+.underline{
+  position: relative;
+}
+
+.underline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
