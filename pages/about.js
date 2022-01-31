@@ -11,6 +11,7 @@ const AboutDesktop = () => {
         flexDirection: "column",
         paddingLeft: 250,
         paddingRight: 250,
+        textAlign: "center",
       }}
     >
       <h2>About</h2>
@@ -54,6 +55,9 @@ const AboutDesktop = () => {
         Willem Karsten
         <br />
         Chairman
+        <br />
+        <br />
+        079 774 4814
       </p>
     </div>
   );

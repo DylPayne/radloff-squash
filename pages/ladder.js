@@ -263,7 +263,7 @@ const NotLoggedInDesktop = () => {
     >
       <div
         style={{
-          clipPath: "polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%)",
+          clipPath: "polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)",
           width: "40%",
           // height: 500,
           backgroundColor: "darkgray",
@@ -285,16 +285,29 @@ const NotLoggedInDesktop = () => {
             justifyContent: "center",
           }}
         >
-          <table style={{ width: "60%", color: "white" }}>
+          <table
+            style={{
+              width: "60%",
+              color: "black",
+              border: "none",
+              paddingTop: "10%",
+              paddingBottom: "10%",
+            }}
+            cellSpacing={0}
+            cellPadding={0}
+          >
             <tbody>
               {players.map((player) => {
                 return (
-                  <tr key={player.id}>
+                  <tr key={player.id} style={{}}>
                     <td
                       style={{
                         // border: "1px solid red",
                         width: "20%",
                         textAlign: "end",
+                        backgroundColor: "white",
+                        borderSpacing: 0,
+                        borderTop: "8px solid gray",
                       }}
                     >
                       <p style={{ fontFamily: "bungee" }}>{player.rank}</p>
@@ -304,6 +317,9 @@ const NotLoggedInDesktop = () => {
                         // border: "1px solid red",
                         width: "80%",
                         textAlign: "center",
+                        backgroundColor: "white",
+                        borderSpacing: 0,
+                        borderTop: "8px solid gray",
                       }}
                     >
                       <p style={{ fontFamily: "bungee" }}>{player.name}</p>
@@ -357,7 +373,7 @@ const NotLoggedInMobile = () => {
     >
       <div
         style={{
-          clipPath: "polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%)",
+          clipPath: "polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)",
           width: "90%",
           // height: 500,
           backgroundColor: "darkgray",
@@ -379,7 +395,7 @@ const NotLoggedInMobile = () => {
             justifyContent: "center",
           }}
         >
-          <table style={{ width: "90%", color: "white" }}>
+          <table style={{ width: "90%", color: "black" }}>
             <tbody>
               {players.map((player) => {
                 return (
@@ -391,7 +407,13 @@ const NotLoggedInMobile = () => {
                         textAlign: "end",
                       }}
                     >
-                      <p style={{ fontFamily: "bungee" }}>{player.rank}</p>
+                      <p
+                        style={{
+                          fontFamily: "bungee",
+                        }}
+                      >
+                        {player.rank}
+                      </p>
                     </td>
                     <td
                       style={{
@@ -400,7 +422,13 @@ const NotLoggedInMobile = () => {
                         textAlign: "center",
                       }}
                     >
-                      <p style={{ fontFamily: "bungee" }}>{player.name}</p>
+                      <p
+                        style={{
+                          fontFamily: "bungee",
+                        }}
+                      >
+                        {player.name}
+                      </p>
                     </td>
                   </tr>
                 );
