@@ -59,8 +59,13 @@ const DesktopHeader = () => {
             <a className="underline">CLUB LADDER</a>
           </Link>
 
-          <Link href="https://www.ezibook.co.za/rpsc/index.php?status=10" passHref>
-            <a target="_blank" rel="noopener noreferrer" className="underline">BOOK COURT</a>
+          <Link
+            href="https://www.ezibook.co.za/rpsc/index.php?status=10"
+            passHref
+          >
+            <a target="_blank" rel="noopener noreferrer" className="underline">
+              BOOK COURT
+            </a>
           </Link>
 
           <Link href="/contact" passHref>
@@ -110,20 +115,29 @@ const MobileHeader = () => {
                 <a>About</a>
               </Link>
               <br />
-              <Link href="/" passHref>
+              <Link href="/membership" passHref>
                 <a>Membership</a>
               </Link>
               <br />
-              <Link href="/" passHref>
+              <Link href="/commitee" passHref>
                 <a>Commitee</a>
               </Link>
               <br />
-              <Link href="/" passHref>
+              <Link href="/ladder" passHref>
                 <a>Club Ladder</a>
               </Link>
               <br />
-              <Link href="/book" passHref>
-                <a>Book Court</a>
+              <Link
+                href="https://www.ezibook.co.za/rpsc/index.php?status=10"
+                passHref
+              >
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  BOOK COURT
+                </a>
               </Link>
               <br />
               <Link href="/contact" passHref>
