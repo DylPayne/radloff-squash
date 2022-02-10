@@ -66,10 +66,10 @@ const HomeDesktop = () => {
             style={{
               width: "100%",
               // border: "1px solid red",
-              paddingLeft: 150,
+              paddingLeft: "15%",
               paddingTop: 50,
               paddingBottom: 50,
-              paddingRight: 150,
+              paddingRight: "15%",
               display: "flex",
               backgroundColor: "#a3a3a3",
               marginTop: 50,
