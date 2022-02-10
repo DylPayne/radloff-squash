@@ -54,8 +54,7 @@ const ContactDesktop = () => {
         <div
           style={{
             width: "100%",
-            paddingLeft: 200,
-            paddingRight: 200,
+            width: 800,
             marginTop: -50,
           }}
         >

@@ -1,12 +1,17 @@
 import MainLayout from "../components/MainLayout";
 import useWindowSize from "../components/windowSize";
+import Image from "next/image";
 
 // MUI
 import { Grid } from "@mui/material";
 
 const CommiteeCard = (props) => {
+  const name = props.name;
+  const src = props.src;
+  const description = props.description;
+
   return (
-    <div style={{ backgroundColor: "#D93B3A", width: "100%", height: "400px" }}>
+    <div style={{ backgroundColor: "#4a4a4a", width: "100%", height: "400px" }}>
       <div
         style={{
           height: "70%",
@@ -14,11 +19,12 @@ const CommiteeCard = (props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          clipPath: "circle(120px)",
           // border: "1px solid black",
         }}
       >
         <div>
-          <p>Image to go here</p>
+          <img src={src} style={{ width: 270, height: 270 }} />
         </div>
       </div>
       <div
@@ -33,7 +39,7 @@ const CommiteeCard = (props) => {
         }}
       >
         <div>
-          <h2>Name to go here</h2>
+          <h2>{name}</h2>
         </div>
       </div>
       <div
@@ -48,7 +54,7 @@ const CommiteeCard = (props) => {
         }}
       >
         <div>
-          <p>Role to go here</p>
+          <p>{description}</p>
         </div>
       </div>
     </div>
@@ -62,24 +68,25 @@ const CommiteeDesktop = (props) => {
       <div style={{ paddingLeft: 150, paddingRight: 150 }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            <CommiteeCard />
+            <CommiteeCard
+              src="/willem.webp"
+              name="Willem Karsten"
+              description="Chairman"
+            />
           </Grid>
           <Grid item xs={4}>
-            <CommiteeCard />
+            <CommiteeCard src="/albert.jpg" name="Albert Havenga" description="Treasurer" />
           </Grid>
           <Grid item xs={4}>
-            <CommiteeCard />
+            <CommiteeCard src="/yolande.png" name="Yolande Castle" description="Manager" />
           </Grid>
+          <Grid item xs={4}></Grid>
           <Grid item xs={4}>
-            <CommiteeCard />
-          </Grid>
-          <Grid item xs={4}>
-            <CommiteeCard />
-          </Grid>
-          <Grid item xs={4}>
-            <CommiteeCard />
+            <CommiteeCard src="/richard.png" name="Richard Castle" description="Vice Chairman" />
           </Grid>
         </Grid>
+
+        <Grid item xs={4}></Grid>
       </div>
     </MainLayout>
   );
@@ -92,7 +99,11 @@ const CommiteeMobile = (props) => {
       <div style={{ paddingLeft: 20, paddingRight: 20 }}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <CommiteeCard />
+            <CommiteeCard
+              src="/willem.webp"
+              name="Willem Karsten"
+              description="Chairman"
+            />
           </Grid>
           <Grid item xs={12}>
             <CommiteeCard />

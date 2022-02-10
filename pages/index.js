@@ -9,111 +9,132 @@ import Map from "../components/Map";
 
 const HomeDesktop = () => {
   return (
-    <div style={{ paddingLeft: 150, paddingRight: 150, marginTop: 70 }}>
+    <div style={{ display: "flex", justifyContent: "center" }}>
       <div
         style={{
-          color: "gray",
-          zIndex: 1000,
-          marginTop: -60,
-          textAlign: "center",
-        }}
-      >
-        <h1>WELCOME TO RAD SQUASH</h1>
-      </div>
-      <div style={{ marginLeft: -150, marginRight: -150 }}>
-        <Carousel
-          emulateTouch
-          infiniteLoop
-          showIndicators={true}
-          showThumbs={false}
-          showStatus={false}
-          dynamicHeight={true}
-        >
-          <div>
-            <img src="/squash1.jpg" />
-          </div>
-          <div>
-            <Image src="/squash1.jpg" layout="fill" />
-          </div>
-          <div>
-            <Image src="/squash1.jpg" layout="fill" />
-          </div>
-        </Carousel>
-      </div>
-      <br />
-      <div
-        style={{
-          display: "flex",
-          // border: "1px solid red",
-          flexDirection: "row",
-          marginLeft: -150,
-          marginRight: -150,
-          marginTop: 100,
-          paddingTop: 100,
-          paddingBottom: 100,
-          backgroundColor: "#e0e0e0",
           paddingLeft: 150,
-          paddingRight: 150,
-          clipPath:
-            "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
+          marginRight: 150,
+          marginTop: 70,
+          width: "100%",
         }}
       >
-        <div
+        {/* <div
           style={{
-            width: "40%",
-            textAlign: "start",
-            color: "#D93B3A",
-            fontSize: 25,
-            // border: "1px solid blue",
-            display: "flex",
-            flexDirection: "column",
+            color: "gray",
+            zIndex: 1000,
+            marginTop: -80,
+            textAlign: "center",
           }}
         >
-          <div>
-            <p style={{ fontFamily: "bungee, sans-serif", color: "black" }}>
-              SQUASH
-            </p>
-            <h1 style={{ marginTop: -60 }}>TAME</h1>
-            <h1 style={{ marginTop: -100 }}>THE GAME</h1>
-          </div>
+          <h1>WELCOME TO RAD SQUASH</h1>
+        </div> */}
+        <div
+          style={{
+            marginLeft: -150,
+            marginRight: -150,
+            marginTop: -20,
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Image
+            src="/collage.png"
+            alt="radloff squash collage"
+            height={600}
+            width={899}
+          />
+        </div>
+        <br />
+        <div
+          style={{
+            display: "flex",
+            // border: "1px solid red",
+            flexDirection: "row",
+            marginLeft: -150,
+            marginRight: -150,
+            marginTop: 30,
+            paddingTop: 100,
+            paddingBottom: 100,
+            backgroundColor: "#e0e0e0",
+            // paddingLeft: 150,
+            // paddingRight: 150,
+            clipPath:
+              "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
+          }}
+        >
           <div
             style={{
-              backgroundColor: "#D93B3A",
               width: "100%",
-              height: 300,
-              marginTop: 50,
+              // border: "1px solid red",
+              paddingLeft: 150,
+              paddingTop: 50,
+              paddingBottom: 50,
+              paddingRight: 150,
               display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
+              backgroundColor: "#a3a3a3",
+              marginTop: 50,
+              marginBottom: 20,
             }}
           >
-            <p style={{ color: "white", fontFamily: "bungee, sans-serif" }}>
-              Become a member today
-            </p>
             <div
               style={{
-                backgroundColor: "gray",
-                color: "white",
-                lineHeight: 0,
-                paddingLeft: 20,
-                paddingRight: 20,
-                fontFamily: "bungee, sans-serif",
-                cursor: "pointer"
+                width: "40%",
+                textAlign: "start",
+                color: "#e72e3a",
+                fontSize: 25,
+                // border: "1px solid blue",
+                display: "flex",
+                flexDirection: "column",
+                // width: 1000,
               }}
             >
-              <p>Sign Up</p>
+              <div>
+                <p style={{ fontFamily: "bungee, sans-serif", color: "black" }}>
+                  SQUASH
+                </p>
+                <h1 style={{ marginTop: -60 }}>TAME</h1>
+                <h1 style={{ marginTop: -100 }}>THE GAME</h1>
+              </div>
+              <div
+                style={{
+                  backgroundColor: "#e72e3a",
+                  width: "100%",
+                  height: 300,
+                  marginTop: 50,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <p style={{ color: "white", fontFamily: "bungee, sans-serif" }}>
+                  Become a member today
+                </p>
+                <div
+                  style={{
+                    backgroundColor: "gray",
+                    color: "white",
+                    lineHeight: 0,
+                    paddingLeft: 20,
+                    paddingRight: 20,
+                    fontFamily: "bungee, sans-serif",
+                    cursor: "pointer",
+                  }}
+                >
+                  <p>Sign Up</p>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                width: "60%",
+                // border: "1px solid red",
+                marginLeft: 30,
+              }}
+            >
+              <Map />
             </div>
           </div>
-        </div>
-        <div
-          style={{
-            width: "60%",
-            // border: "1px solid black",
-            marginLeft: 30,
-          }}
-        >
-          <Map />
         </div>
       </div>
     </div>
@@ -122,8 +143,8 @@ const HomeDesktop = () => {
 
 const MobileHome = () => {
   return (
-    <div style={{ paddingLeft: 20, paddingRight: 20, marginTop: 70 }}>
-      <div
+    <div style={{ paddingLeft: 20, paddingRight: 20, marginTop: 20 }}>
+      {/* <div
         style={{
           color: "gray",
           zIndex: 1000,
@@ -132,25 +153,14 @@ const MobileHome = () => {
         }}
       >
         <h1>WELCOME TO RAD SQUASH</h1>
-      </div>
+      </div> */}
       <div style={{ marginLeft: -20, marginRight: -20 }}>
-        <Carousel
-          emulateTouch
-          infiniteLoop
-          showIndicators={false}
-          showThumbs={false}
-          showStatus={false}
-        >
-          <div>
-            <img src="/squash1.jpg" />
-          </div>
-          <div>
-            <img src="/squash1.jpg" />
-          </div>
-          <div>
-            <img src="/squash1.jpg" />
-          </div>
-        </Carousel>
+        <Image
+          src="/collage.png"
+          alt="radloff squash collage"
+          height={600}
+          width={899}
+        />
       </div>
       <br />
       <div
@@ -174,11 +184,12 @@ const MobileHome = () => {
           style={{
             width: "100%",
             textAlign: "start",
-            color: "#D93B3A",
+            color: "#e72e3a",
             fontSize: 25,
             // border: "1px solid blue",
             display: "flex",
             flexDirection: "column",
+            // backgroundColor: "#aa3a3a3"
           }}
         >
           <div>
@@ -191,7 +202,7 @@ const MobileHome = () => {
           <br />
           <div
             style={{
-              backgroundColor: "#D93B3A",
+              backgroundColor: "#e72e3a",
               width: "100%",
               height: 200,
               display: "flex",

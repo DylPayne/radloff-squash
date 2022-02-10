@@ -18,7 +18,7 @@ const DesktopHeader = () => {
           height: 100,
         }}
       >
-        <Image src={"/logo.jpg"} width={100} height={100} />
+        <Image src={"/logo.jpg"} width={136} height={100} />
       </header>
       <header
         style={{
@@ -26,7 +26,7 @@ const DesktopHeader = () => {
           justifyContent: "center",
           alignItems: "center",
           height: 35,
-          backgroundColor: "#D93B3A",
+          backgroundColor: "#e72e3a",
           color: "white",
           fontFamily: "acumin-pro",
         }}
@@ -84,7 +84,7 @@ const MobileHeader = () => {
       style={{
         display: "flex",
         width: "100%",
-        borderBottom: "5px solid #D93B3A",
+        borderBottom: "5px solid #e72e3a",
       }}
     >
       <div
@@ -97,56 +97,56 @@ const MobileHeader = () => {
       >
         <Button onClick={() => setOpen(true)}>
           <MenuIcon style={{ color: "black" }} />
-          <Drawer anchor="top" open={open} onClose={() => setOpen(false)}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <br />
-              <Link href="/" passHref>
-                <a>Home</a>
-              </Link>
-              <br />
-              <Link href="/about" passHref>
-                <a>About</a>
-              </Link>
-              <br />
-              <Link href="/membership" passHref>
-                <a>Membership</a>
-              </Link>
-              <br />
-              <Link href="/commitee" passHref>
-                <a>Commitee</a>
-              </Link>
-              <br />
-              <Link href="/ladder" passHref>
-                <a>Club Ladder</a>
-              </Link>
-              <br />
-              <Link
-                href="https://www.ezibook.co.za/rpsc/index.php?status=10"
-                passHref
-              >
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  BOOK COURT
-                </a>
-              </Link>
-              <br />
-              <Link href="/contact" passHref>
-                <a>Contact Us</a>
-              </Link>
-              <br />
-            </div>
-          </Drawer>
         </Button>
+        <Drawer anchor="top" open={open} onClose={() => setOpen(false)}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <br />
+            <Link href="/" passHref>
+              <a>Home</a>
+            </Link>
+            <br />
+            <Link href="/about" passHref>
+              <a>About</a>
+            </Link>
+            <br />
+            <Link href="/membership" passHref>
+              <a>Membership</a>
+            </Link>
+            <br />
+            <Link href="/commitee" passHref>
+              <a>Commitee</a>
+            </Link>
+            <br />
+            <Link href="/ladder" passHref>
+              <a>Club Ladder</a>
+            </Link>
+            <br />
+            <Link
+              href="https://www.ezibook.co.za/rpsc/index.php?status=10"
+              passHref
+            >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                BOOK COURT
+              </a>
+            </Link>
+            <br />
+            <Link href="/contact" passHref>
+              <a>Contact Us</a>
+            </Link>
+            <br />
+          </div>
+        </Drawer>
       </div>
       <div
         style={{

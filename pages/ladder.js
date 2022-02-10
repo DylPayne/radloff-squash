@@ -258,28 +258,29 @@ const NotLoggedInDesktop = () => {
         alignItems: "center",
         flexDirection: "column",
         // border: "1px solid red",
-        marginTop: 55,
+        marginTop: 5,
       }}
     >
       <div
         style={{
-          clipPath: "polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)",
-          width: "40%",
+          width: "60%",
           // height: 500,
-          backgroundColor: "darkgray",
+          // backgroundColor: "darkgray",
           display: "flex",
           flexDirection: "column",
           // justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <div style={{ color: "white", marginTop: 50, fontSize: 20 }}>
+        <div
+          style={{ color: "black", marginTop: 0, fontSize: 20, width: "100%" }}
+        >
           <h1>Club Ladder</h1>
         </div>
         <div
           style={{
-            backgroundColor: "gray",
-            width: "90%",
+            // backgroundColor: "gray",
+            width: "100%",
             marginBottom: "5%",
             display: "flex",
             justifyContent: "center",
@@ -287,11 +288,13 @@ const NotLoggedInDesktop = () => {
         >
           <table
             style={{
-              width: "60%",
+              width: "100%",
               color: "black",
               border: "none",
-              paddingTop: "10%",
-              paddingBottom: "10%",
+              // paddingTop: "2%",
+              paddingBottom: "2%",
+              lineHeight: 1,
+              fontSize: 20,
             }}
             cellSpacing={0}
             cellPadding={0}
@@ -302,24 +305,34 @@ const NotLoggedInDesktop = () => {
                   <tr key={player.id} style={{}}>
                     <td
                       style={{
+                        width: "4%",
+                        backgroundColor: "#e72e3a",
+                        borderTop: "8px solid white",
+                      }}
+                    />
+                    <td
+                      style={{
                         // border: "1px solid red",
                         width: "20%",
-                        textAlign: "end",
-                        backgroundColor: "white",
+                        textAlign: "center",
+                        backgroundColor: "darkgray",
                         borderSpacing: 0,
-                        borderTop: "8px solid gray",
+                        borderTop: "8px solid white",
                       }}
                     >
-                      <p style={{ fontFamily: "bungee" }}>{player.rank}</p>
+                      <p style={{ fontFamily: "bungee" }}>
+                        {player.rank + "."}
+                      </p>
                     </td>
                     <td
                       style={{
                         // border: "1px solid red",
                         width: "80%",
-                        textAlign: "center",
-                        backgroundColor: "white",
+                        paddingLeft: 20,
+                        textAlign: "left",
+                        backgroundColor: "darkgray",
                         borderSpacing: 0,
-                        borderTop: "8px solid gray",
+                        borderTop: "8px solid white",
                       }}
                     >
                       <p style={{ fontFamily: "bungee" }}>{player.name}</p>
@@ -368,67 +381,75 @@ const NotLoggedInMobile = () => {
         alignItems: "center",
         flexDirection: "column",
         // border: "1px solid red",
-        marginTop: 55,
+        // marginTop: 55,
       }}
     >
       <div
         style={{
-          clipPath: "polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)",
+          // clipPath: "polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0 5%)",
           width: "90%",
           // height: 500,
-          backgroundColor: "darkgray",
+          // backgroundColor: "darkgray",
           display: "flex",
           flexDirection: "column",
           // justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <div style={{ color: "white", marginTop: 50, fontSize: 20 }}>
+        <div style={{ color: "black", fontSize: 20 }}>
           <h1>Club Ladder</h1>
         </div>
         <div
           style={{
-            backgroundColor: "gray",
+            // backgroundColor: "gray",
             width: "90%",
             marginBottom: "5%",
             display: "flex",
             justifyContent: "center",
           }}
         >
-          <table style={{ width: "90%", color: "black" }}>
+          <table
+            style={{ width: "90%", color: "black" }}
+            cellSpacing={0}
+            cellPadding={0}
+          >
             <tbody>
               {players.map((player) => {
                 return (
-                  <tr key={player.id}>
+                  <tr key={player.id} style={{lineHeight: 1}}>
+                    <td
+                      style={{
+                        width: "4%",
+                        backgroundColor: "#e72e3a",
+                        borderTop: "8px solid white",
+                      }}
+                    />
                     <td
                       style={{
                         // border: "1px solid red",
                         width: "20%",
-                        textAlign: "end",
+                        textAlign: "center",
+                        backgroundColor: "darkgray",
+                        borderSpacing: 0,
+                        borderTop: "8px solid white",
                       }}
                     >
-                      <p
-                        style={{
-                          fontFamily: "bungee",
-                        }}
-                      >
-                        {player.rank}
+                      <p style={{ fontFamily: "bungee" }}>
+                        {player.rank + "."}
                       </p>
                     </td>
                     <td
                       style={{
                         // border: "1px solid red",
                         width: "80%",
-                        textAlign: "center",
+                        paddingLeft: 20,
+                        textAlign: "left",
+                        backgroundColor: "darkgray",
+                        borderSpacing: 0,
+                        borderTop: "8px solid white",
                       }}
                     >
-                      <p
-                        style={{
-                          fontFamily: "bungee",
-                        }}
-                      >
-                        {player.name}
-                      </p>
+                      <p style={{ fontFamily: "bungee" }}>{player.name}</p>
                     </td>
                   </tr>
                 );
