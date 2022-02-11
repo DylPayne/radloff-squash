@@ -156,7 +156,7 @@ const MobileHeader = () => {
           width: "33.33%",
         }}
       >
-        <Image src="/logo.jpg" width={100} height={100} />
+        <Image src="/logo.jpg" width={136} height={100} />
       </div>
       <div
         style={{

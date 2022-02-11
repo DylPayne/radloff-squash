@@ -33,7 +33,7 @@ const DesktopFooter = () => {
       </div>
 
       <br />
-      <Image src="/logo.jpg" height={100} width={100} />
+      <Image src="/logo.jpg" height={100} width={136} />
     </div>
   );
 };

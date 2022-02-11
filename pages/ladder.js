@@ -263,7 +263,7 @@ const NotLoggedInDesktop = () => {
     >
       <div
         style={{
-          width: "60%",
+          width: 700,
           // height: 500,
           // backgroundColor: "darkgray",
           display: "flex",
@@ -295,6 +295,7 @@ const NotLoggedInDesktop = () => {
               paddingBottom: "2%",
               lineHeight: 1,
               fontSize: 20,
+              tableLayout: "fixed",
             }}
             cellSpacing={0}
             cellPadding={0}
@@ -305,7 +306,7 @@ const NotLoggedInDesktop = () => {
                   <tr key={player.id} style={{}}>
                     <td
                       style={{
-                        width: "4%",
+                        width: 10,
                         backgroundColor: "#e72e3a",
                         borderTop: "8px solid white",
                       }}
@@ -313,7 +314,7 @@ const NotLoggedInDesktop = () => {
                     <td
                       style={{
                         // border: "1px solid red",
-                        width: "20%",
+                        width: 30,
                         textAlign: "center",
                         backgroundColor: "darkgray",
                         borderSpacing: 0,
@@ -327,7 +328,7 @@ const NotLoggedInDesktop = () => {
                     <td
                       style={{
                         // border: "1px solid red",
-                        width: "80%",
+                        width: 400,
                         paddingLeft: 20,
                         textAlign: "left",
                         backgroundColor: "darkgray",
@@ -396,7 +397,15 @@ const NotLoggedInMobile = () => {
           alignItems: "center",
         }}
       >
-        <div style={{ color: "black", fontSize: 20 }}>
+        <div
+          style={{
+            color: "black",
+            fontSize: 20,
+            // border: "1px solid red",
+            width: "80%",
+            lineHeight: 1,
+          }}
+        >
           <h1>Club Ladder</h1>
         </div>
         <div
@@ -416,7 +425,7 @@ const NotLoggedInMobile = () => {
             <tbody>
               {players.map((player) => {
                 return (
-                  <tr key={player.id} style={{lineHeight: 1}}>
+                  <tr key={player.id} style={{ lineHeight: 1 }}>
                     <td
                       style={{
                         width: "4%",
@@ -480,7 +489,7 @@ const Ladder = () => {
   const size = useWindowSize();
   return (
     <MainLayout>
-      {size.width > 1000 ? <DesktopLadder /> : <NotLoggedInMobile />}
+      {size.width > 1200 ? <DesktopLadder /> : <NotLoggedInMobile />}
     </MainLayout>
   );
 };

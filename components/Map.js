@@ -1,5 +1,5 @@
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
-import { useState, useCallback } from "react";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { useState, useCallback, useEffect } from "react";
 import mapStyle from "./MapStyle";
 
 const containerStyle = {
@@ -7,12 +7,29 @@ const containerStyle = {
   height: "100%",
 };
 
-const center = {
-  lat: -33.918861,
-  lng: 18.4233,
-};
+// const center = {
+//   lat: -34.07874643625518,
+//   lng: 18.87361381160325,
+// };
 
 const Map = () => {
+  const [center, setCenter] = useState({});
+  const [zoom, setZoom] = useState(null);
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {}, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((prevCounter) => prevCounter + 1);
+      setCenter({
+        lat: -34.07874643625518,
+        lng: 18.87361381160325,
+      });
+      setZoom(11);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyD1M-b1E-Sva_5BoPlTU_G09APr68YPUQ4",
@@ -30,16 +47,14 @@ const Map = () => {
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
-      center={{
-        lat: -33.918861,
-        lng: 18.4233,
-      }}
-      zoom={10}
+      center={center}
+      zoom={zoom}
       onLoad={onLoad}
       onUnmount={onUnmount}
       options={{ styles: mapStyle }}
     >
       {/* Child components, such as markers, info windows, etc. */}
+      <Marker position={center} />
       <></>
     </GoogleMap>
   ) : (

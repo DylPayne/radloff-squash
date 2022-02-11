@@ -47,7 +47,7 @@ const MembershipDesktop = () => {
           marginTop: 20,
         }}
       >
-        <div style={{ width: "50%", textAlign: "center" }}>
+        <div style={{ width: 1000, textAlign: "center" }}>
           <h1
             style={{
               fontSize: 20,
@@ -204,7 +204,7 @@ const MembershipMobile = () => {
           marginTop: 20,
         }}
       >
-        <div style={{ width: "50%", textAlign: "center" }}>
+        <div style={{ width: "70%", textAlign: "center" }}>
           <h1
             style={{
               fontSize: 20,

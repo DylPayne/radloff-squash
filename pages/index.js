@@ -66,73 +66,80 @@ const HomeDesktop = () => {
             style={{
               width: "100%",
               // border: "1px solid red",
-              paddingLeft: "15%",
+              // paddingLeft: "15%",
               paddingTop: 50,
               paddingBottom: 50,
-              paddingRight: "15%",
+              // paddingRight: "15%",
               display: "flex",
+              justifyContent: "center",
               backgroundColor: "#a3a3a3",
               marginTop: 50,
               marginBottom: 20,
             }}
           >
-            <div
-              style={{
-                width: "40%",
-                textAlign: "start",
-                color: "#e72e3a",
-                fontSize: 25,
-                // border: "1px solid blue",
-                display: "flex",
-                flexDirection: "column",
-                // width: 1000,
-              }}
-            >
-              <div>
-                <p style={{ fontFamily: "bungee, sans-serif", color: "black" }}>
-                  SQUASH
-                </p>
-                <h1 style={{ marginTop: -60 }}>TAME</h1>
-                <h1 style={{ marginTop: -100 }}>THE GAME</h1>
+            <div style={{ width: 1000, display: "flex" }}>
+              <div
+                style={{
+                  width: "40%",
+                  textAlign: "start",
+                  color: "#e72e3a",
+                  fontSize: 25,
+                  // border: "1px solid blue",
+                  display: "flex",
+                  flexDirection: "column",
+                  // width: 1000,
+                }}
+              >
+                <div>
+                  <p
+                    style={{ fontFamily: "bungee, sans-serif", color: "black" }}
+                  >
+                    SQUASH
+                  </p>
+                  <h1 style={{ marginTop: -60 }}>TAME</h1>
+                  <h1 style={{ marginTop: -100 }}>THE GAME</h1>
+                </div>
+                <div
+                  style={{
+                    backgroundColor: "#e72e3a",
+                    width: "100%",
+                    height: 300,
+                    marginTop: 50,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <p
+                    style={{ color: "white", fontFamily: "bungee, sans-serif" }}
+                  >
+                    Become a member today
+                  </p>
+                  <div
+                    style={{
+                      backgroundColor: "gray",
+                      color: "white",
+                      lineHeight: 0,
+                      paddingLeft: 20,
+                      paddingRight: 20,
+                      fontFamily: "bungee, sans-serif",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <p>Sign Up</p>
+                  </div>
+                </div>
               </div>
               <div
                 style={{
-                  backgroundColor: "#e72e3a",
-                  width: "100%",
-                  height: 300,
-                  marginTop: 50,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  width: "60%",
+                  // border: "1px solid red",
+                  marginLeft: 30,
                 }}
               >
-                <p style={{ color: "white", fontFamily: "bungee, sans-serif" }}>
-                  Become a member today
-                </p>
-                <div
-                  style={{
-                    backgroundColor: "gray",
-                    color: "white",
-                    lineHeight: 0,
-                    paddingLeft: 20,
-                    paddingRight: 20,
-                    fontFamily: "bungee, sans-serif",
-                    cursor: "pointer",
-                  }}
-                >
-                  <p>Sign Up</p>
-                </div>
+                <Map />
               </div>
-            </div>
-            <div
-              style={{
-                width: "60%",
-                // border: "1px solid red",
-                marginLeft: 30,
-              }}
-            >
-              <Map />
             </div>
           </div>
         </div>

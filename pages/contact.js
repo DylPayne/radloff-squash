@@ -146,7 +146,7 @@ const ContactDesktop = () => {
         </div>
         <div
           style={{
-            width: "100%",
+            width: 1200,
             height: 400,
             paddingLeft: 200,
             paddingRight: 200,

@@ -10,7 +10,7 @@ const AboutDesktop = () => {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          width: 1000,
+          width: 800,
           textAlign: "center",
         }}
       >
