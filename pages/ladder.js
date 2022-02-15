@@ -307,7 +307,7 @@ const NotLoggedInDesktop = () => {
                     <td
                       style={{
                         width: 10,
-                        backgroundColor: "#de000a",
+                        backgroundColor: "#e80000",
                         borderTop: "8px solid white",
                       }}
                     />
@@ -429,7 +429,7 @@ const NotLoggedInMobile = () => {
                     <td
                       style={{
                         width: "4%",
-                        backgroundColor: "#de000a",
+                        backgroundColor: "#e80000",
                         borderTop: "8px solid white",
                       }}
                     />

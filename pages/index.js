@@ -6,8 +6,11 @@ import { useState } from "react";
 import MainLayout from "../components/MainLayout";
 import Image from "next/image";
 import Map from "../components/Map";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const HomeDesktop = () => {
+  const router = useRouter();
   return (
     <div style={{ display: "flex", justifyContent: "center" }}>
       <div
@@ -53,8 +56,8 @@ const HomeDesktop = () => {
             marginLeft: -150,
             marginRight: -150,
             marginTop: 30,
-            paddingTop: 100,
-            paddingBottom: 100,
+            // paddingTop: 100,
+            // paddingBottom: 100,
             // backgroundColor: "#e0e0e0",
             // paddingLeft: 150,
             // paddingRight: 150,
@@ -73,16 +76,16 @@ const HomeDesktop = () => {
               display: "flex",
               justifyContent: "center",
               backgroundColor: "#a3a3a3",
-              marginTop: 50,
-              marginBottom: 20,
+              // marginTop: 50,
+              // marginBottom: 20,
             }}
           >
             <div style={{ width: 1000, display: "flex" }}>
               <div
                 style={{
-                  width: "40%",
+                  width: "50%",
                   textAlign: "start",
-                  color: "#de000a",
+                  color: "#e80000",
                   fontSize: 25,
                   // border: "1px solid blue",
                   display: "flex",
@@ -91,44 +94,42 @@ const HomeDesktop = () => {
                 }}
               >
                 <div>
-                  <p
-                    style={{ fontFamily: "bungee, sans-serif", color: "black" }}
-                  >
-                    SQUASH
-                  </p>
-                  <h1 style={{ marginTop: -60 }}>TAME</h1>
-                  <h1 style={{ marginTop: -100 }}>THE GAME</h1>
+                  <img src="/tame.png" alt="tame the game" width={430} />
                 </div>
                 <div
                   style={{
-                    backgroundColor: "#de000a",
+                    // backgroundColor: "#e80000",
                     width: "100%",
-                    height: 300,
+                    height: 245,
                     marginTop: 50,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
+                    backgroundImage: "url(/joinus.png)",
+                    backgroundSize: "cover",
                   }}
                 >
-                  <p
+                  {/* <p
                     style={{ color: "white", fontFamily: "bungee, sans-serif" }}
                   >
                     Become a member today
-                  </p>
+                  </p> */}
                   <div
                     style={{
-                      backgroundColor: "gray",
                       color: "white",
-                      lineHeight: 0,
+                      height: 29,
+                      width: "100%",
                       paddingLeft: 20,
                       paddingRight: 20,
                       fontFamily: "bungee, sans-serif",
                       cursor: "pointer",
+                      position: "relative",
+                      bottom: -107,
+                      // border: "1px solid blue",
                     }}
-                  >
-                    <p>Sign Up</p>
-                  </div>
+                    onClick={() => router.push("/contact")}
+                  ></div>
                 </div>
               </div>
               <div
@@ -177,64 +178,47 @@ const MobileHome = () => {
           flexDirection: "column",
           marginLeft: -20,
           marginRight: -20,
-          marginTop: 100,
-          paddingTop: 100,
-          paddingBottom: 100,
+          // marginTop: 100,
+          paddingTop: 50,
+          // paddingBottom: 100,
           backgroundColor: "#e0e0e0",
-          paddingLeft: 20,
-          paddingRight: 20,
-          clipPath:
-            "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
+          // paddingLeft: 20,
+          // paddingRight: 20,
+          // clipPath:
+          //   "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
         }}
       >
         <div
           style={{
             width: "100%",
             textAlign: "start",
-            color: "#de000a",
+            color: "#e80000",
             fontSize: 25,
             // border: "1px solid blue",
             display: "flex",
             flexDirection: "column",
+            alignItems: "center",
             // backgroundColor: "#aa3a3a3"
           }}
         >
           <div>
-            <p style={{ fontFamily: "bungee, sans-serif", color: "black" }}>
-              SQUASH
-            </p>
-            <h1 style={{ marginTop: -60 }}>TAME</h1>
-            <h1 style={{ marginTop: -100 }}>THE GAME</h1>
+            <img src="/tame.png" alt="tame the game" width={320} />
           </div>
           <br />
           <div
             style={{
-              backgroundColor: "#de000a",
-              width: "100%",
-              height: 200,
+              backgroundImage: "url(/joinus.png)",
+              backgroundSize: "cover",
+              width: 320,
+              height: 180,
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 40,
+              curser: "pointer",
             }}
-          >
-            <p style={{ color: "white", fontFamily: "bungee, sans-serif" }}>
-              Become a member today
-            </p>
-            <div
-              style={{
-                backgroundColor: "gray",
-                color: "white",
-                lineHeight: 0,
-                paddingLeft: 20,
-                paddingRight: 20,
-                fontFamily: "bungee, sans-serif",
-              }}
-            >
-              <p>Sign Up</p>
-            </div>
-          </div>
+          ></div>
         </div>
         <br />
         <div

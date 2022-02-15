@@ -26,7 +26,7 @@ const DesktopHeader = () => {
           justifyContent: "center",
           alignItems: "center",
           height: 35,
-          backgroundColor: "#de000a",
+          backgroundColor: "#e80000",
           color: "white",
           fontFamily: "acumin-pro",
         }}
@@ -36,7 +36,7 @@ const DesktopHeader = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-around",
-            width: 700,
+            width: 900,
           }}
         >
           <Link href="/" passHref>
@@ -45,6 +45,10 @@ const DesktopHeader = () => {
 
           <Link href="/about" passHref>
             <a className="underline">ABOUT</a>
+          </Link>
+
+          <Link href="/gallery" passHref>
+            <a className="gallery">ABOUT</a>
           </Link>
 
           <Link href="/membership" passHref>
@@ -84,7 +88,7 @@ const MobileHeader = () => {
       style={{
         display: "flex",
         width: "100%",
-        borderBottom: "5px solid #de000a",
+        borderBottom: "5px solid #e80000",
       }}
     >
       <div
@@ -122,6 +126,10 @@ const MobileHeader = () => {
             <br />
             <Link href="/commitee" passHref>
               <a>Commitee</a>
+            </Link>
+            <br />
+            <Link href="/gallery" passHref>
+              <a>Gallery</a>
             </Link>
             <br />
             <Link href="/ladder" passHref>
