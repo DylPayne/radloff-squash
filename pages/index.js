@@ -150,6 +150,7 @@ const HomeDesktop = () => {
 };
 
 const MobileHome = () => {
+  const router = useRouter();
   return (
     <div style={{ paddingLeft: 20, paddingRight: 20, marginTop: 20 }}>
       {/* <div
@@ -218,6 +219,7 @@ const MobileHome = () => {
               paddingBottom: 40,
               curser: "pointer",
             }}
+            onClick={() => router.push("/contact")}
           ></div>
         </div>
         <br />
