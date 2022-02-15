@@ -15,10 +15,10 @@ const DesktopHeader = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: 100,
+          height: 120,
         }}
       >
-        <Image src={"/logo.jpg"} width={136} height={100} />
+        <Image src={"/logo.svg"} width={200} height={90} />
       </header>
       <header
         style={{
@@ -26,7 +26,7 @@ const DesktopHeader = () => {
           justifyContent: "center",
           alignItems: "center",
           height: 35,
-          backgroundColor: "#e72e3a",
+          backgroundColor: "#de000a",
           color: "white",
           fontFamily: "acumin-pro",
         }}
@@ -84,7 +84,7 @@ const MobileHeader = () => {
       style={{
         display: "flex",
         width: "100%",
-        borderBottom: "5px solid #e72e3a",
+        borderBottom: "5px solid #de000a",
       }}
     >
       <div
@@ -154,9 +154,10 @@ const MobileHeader = () => {
           justifyContent: "center",
           alignItems: "center",
           width: "33.33%",
+          padding: 10,
         }}
       >
-        <Image src="/logo.jpg" width={136} height={100} />
+        <Image src={"/logo.svg"} width={200} height={90} />
       </div>
       <div
         style={{

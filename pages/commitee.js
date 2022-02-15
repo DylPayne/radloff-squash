@@ -100,8 +100,8 @@ const CommiteeDesktop = (props) => {
             <Grid item xs={4}>
               <CommiteeCard
                 src="/richard.png"
-                name="Richard Castle"
-                description="Vice Chairman"
+                name="Yan Oosthuizen"
+                description="Development"
               />
             </Grid>
             <Grid item xs={2}></Grid>
@@ -116,7 +116,15 @@ const CommiteeMobile = (props) => {
   return (
     <MainLayout>
       <br />
-      <div style={{ display: "flex", justifyContent: "center", width: "100%", paddingLeft: 20, paddingRight: 20 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          paddingLeft: 20,
+          paddingRight: 20,
+        }}
+      >
         <div style={{ maxWidth: 320 }}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -127,19 +135,32 @@ const CommiteeMobile = (props) => {
               />
             </Grid>
             <Grid item xs={12}>
-              <CommiteeCard />
+              <CommiteeCard
+                src="/richard.png"
+                name="Richard Castle"
+                description="Vice Chairman"
+              />
             </Grid>
             <Grid item xs={12}>
-              <CommiteeCard />
+              <CommiteeCard
+                src="/yolande.png"
+                name="Yolande Castle"
+                description="Manager"
+              />
             </Grid>
             <Grid item xs={12}>
-              <CommiteeCard />
+              <CommiteeCard
+                src="/albert.jpg"
+                name="Albert Havenga"
+                description="Treasurer"
+              />
             </Grid>
             <Grid item xs={12}>
-              <CommiteeCard />
-            </Grid>
-            <Grid item xs={12}>
-              <CommiteeCard />
+              <CommiteeCard
+                src="/richard.png"
+                name="Yan Oosthuizen"
+                description="Development"
+              />
             </Grid>
           </Grid>
         </div>

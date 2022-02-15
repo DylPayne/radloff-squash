@@ -55,11 +55,11 @@ const HomeDesktop = () => {
             marginTop: 30,
             paddingTop: 100,
             paddingBottom: 100,
-            backgroundColor: "#e0e0e0",
+            // backgroundColor: "#e0e0e0",
             // paddingLeft: 150,
             // paddingRight: 150,
-            clipPath:
-              "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
+            // clipPath:
+            //   "polygon(30% 9%, 71% 0, 100% 7%, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 4%)",
           }}
         >
           <div
@@ -82,7 +82,7 @@ const HomeDesktop = () => {
                 style={{
                   width: "40%",
                   textAlign: "start",
-                  color: "#e72e3a",
+                  color: "#de000a",
                   fontSize: 25,
                   // border: "1px solid blue",
                   display: "flex",
@@ -101,7 +101,7 @@ const HomeDesktop = () => {
                 </div>
                 <div
                   style={{
-                    backgroundColor: "#e72e3a",
+                    backgroundColor: "#de000a",
                     width: "100%",
                     height: 300,
                     marginTop: 50,
@@ -191,7 +191,7 @@ const MobileHome = () => {
           style={{
             width: "100%",
             textAlign: "start",
-            color: "#e72e3a",
+            color: "#de000a",
             fontSize: 25,
             // border: "1px solid blue",
             display: "flex",
@@ -209,7 +209,7 @@ const MobileHome = () => {
           <br />
           <div
             style={{
-              backgroundColor: "#e72e3a",
+              backgroundColor: "#de000a",
               width: "100%",
               height: 200,
               display: "flex",
