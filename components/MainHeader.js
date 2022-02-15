@@ -48,7 +48,7 @@ const DesktopHeader = () => {
           </Link>
 
           <Link href="/gallery" passHref>
-            <a className="gallery">ABOUT</a>
+            <a className="underline">GALLERY</a>
           </Link>
 
           <Link href="/membership" passHref>
