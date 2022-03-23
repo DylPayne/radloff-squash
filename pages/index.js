@@ -35,7 +35,8 @@ const HomeDesktop = () => {
           style={{
             marginLeft: -150,
             marginRight: -150,
-            marginTop: -20,
+            marginTop: -70,
+            marginBottom: -30,
             display: "flex",
             justifyContent: "center",
           }}
@@ -118,14 +119,14 @@ const HomeDesktop = () => {
                   <div
                     style={{
                       color: "white",
-                      height: 29,
+                      height: "100%",
                       width: "100%",
                       paddingLeft: 20,
                       paddingRight: 20,
                       fontFamily: "bungee, sans-serif",
                       cursor: "pointer",
                       position: "relative",
-                      bottom: -107,
+                      // bottom: -107,
                       // border: "1px solid blue",
                     }}
                     onClick={() => router.push("/contact")}

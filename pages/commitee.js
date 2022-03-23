@@ -12,6 +12,7 @@ const CommiteeCard = (props) => {
 
   return (
     <div style={{ backgroundColor: "#4a4a4a", width: "100%", height: "400px" }}>
+      
       <div
         style={{
           height: "70%",
@@ -64,7 +65,19 @@ const CommiteeCard = (props) => {
 const CommiteeDesktop = (props) => {
   return (
     <MainLayout>
-      <br />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        <h2>Committee</h2>
+      </div>
+      {/* <br /> */}
       <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
         <div style={{ width: 1000 }}>
           <Grid container spacing={2}>
@@ -99,8 +112,8 @@ const CommiteeDesktop = (props) => {
             </Grid>
             <Grid item xs={4}>
               <CommiteeCard
-                src="/richard.png"
-                name="Yan Oosthuizen"
+                src="/ian.jpg"
+                name="Ian Oosthuizen"
                 description="Development"
               />
             </Grid>
@@ -115,7 +128,19 @@ const CommiteeDesktop = (props) => {
 const CommiteeMobile = (props) => {
   return (
     <MainLayout>
-      <br />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        <h2>Committee</h2>
+      </div>
+      {/* <br /> */}
       <div
         style={{
           display: "flex",

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -14,7 +15,7 @@ const DesktopFooter = () => {
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        paddingTop: 100,
+        paddingTop: 50,
         paddingBottom: 50,
       }}
     >
@@ -26,16 +27,16 @@ const DesktopFooter = () => {
           alignItems: "center",
         }}
       >
-        <Button onClick={() => router.push("https://wa.me/27218512200")}>
-          <WhatsAppIcon style={{ color: "black", fontSize: 30 }} />
-        </Button>
-        <Button
-          onClick={() =>
-            router.push("https://www.facebook.com/radloffparksquash/")
-          }
-        >
-          <FacebookIcon style={{ color: "black", fontSize: 30 }} />
-        </Button>
+        <Link href="https://wa.me/0797744814" passHref>
+          <a target="_blank" rel="noopener noreferrer">
+            <WhatsAppIcon style={{ color: "black", fontSize: 30 }} />
+          </a>
+        </Link>
+        <Link href="https://www.facebook.com/radloffparksquash/" passHref>
+          <a target="_blank" rel="noopener noreferrer">
+            <FacebookIcon style={{ color: "black", fontSize: 30 }} />
+          </a>
+        </Link>
       </div>
 
       <br />

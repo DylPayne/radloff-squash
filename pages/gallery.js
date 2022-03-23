@@ -9,6 +9,18 @@ import Image from "next/image";
 const GalleryDesktop = () => {
   return (
     <MainLayout>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        <h2>Gallery</h2>
+      </div>
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <div
           style={{
@@ -39,6 +51,18 @@ const GalleryMobile = () => {
         style={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        <h2>Gallery</h2>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
           width: "100%",
           // border: "1px solid red",
         }}
@@ -63,11 +87,7 @@ const GalleryMobile = () => {
           >
             {itemData.map((item) => (
               <ImageListItem key={item.img}>
-                <img
-                  src={`${item.img}`}
-                  alt={item.title}
-                  loading="lazy"
-                />
+                <img src={`${item.img}`} alt={item.title} loading="lazy" />
               </ImageListItem>
             ))}
           </ImageList>

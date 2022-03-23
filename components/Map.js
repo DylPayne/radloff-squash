@@ -24,7 +24,7 @@ const Map = () => {
         lat: -34.07874643625518,
         lng: 18.87361381160325,
       });
-      setZoom(11);
+      setZoom(10);
     }, 1000);
 
     return () => clearInterval(interval);

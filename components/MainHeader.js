@@ -1,6 +1,7 @@
 import Image from "next/image";
 import useWindowSize from "./windowSize";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 // MUI
 import { Button, Drawer } from "@mui/material";
@@ -8,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 const DesktopHeader = () => {
+  const router = useRouter()
   return (
     <header>
       <header
@@ -18,7 +20,7 @@ const DesktopHeader = () => {
           height: 120,
         }}
       >
-        <Image src={"/logo.svg"} width={200} height={90} />
+        <Image src={"/logo.svg"} width={200} height={90} onClick={() => router.push("/")} />
       </header>
       <header
         style={{
@@ -37,6 +39,7 @@ const DesktopHeader = () => {
             alignItems: "center",
             justifyContent: "space-around",
             width: 900,
+            fontWeight: 600,
           }}
         >
           <Link href="/" passHref>
@@ -56,7 +59,7 @@ const DesktopHeader = () => {
           </Link>
 
           <Link href="/commitee" passHref>
-            <a className="underline">COMMITEE</a>
+            <a className="underline">COMMITTEE</a>
           </Link>
 
           <Link href="/ladder" passHref>

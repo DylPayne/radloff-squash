@@ -3,7 +3,26 @@ import useWindowSize from "../components/windowSize";
 
 const AboutDesktop = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          // paddingTop: 20,
+          paddingBottom: 20,
+        }}
+      >
+        <h2>About</h2>
+      </div>
       <div
         style={{
           display: "flex",
@@ -14,7 +33,6 @@ const AboutDesktop = () => {
           textAlign: "center",
         }}
       >
-        <h2>About</h2>
         <p>
           Built in 1979, our little club finds itself in the middle of the
           Radloff Park Sports grounds. Surrounded by mountains and a stone’s

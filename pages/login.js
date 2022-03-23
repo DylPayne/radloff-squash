@@ -1,10 +1,12 @@
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from "../firebase/firebase";
+import { useRouter } from "next/router";
 
 import { TextField, Button } from "@mui/material";
 import { useState } from "react";
 
 const LoginDesktop = () => {
+  const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -22,6 +24,7 @@ const LoginDesktop = () => {
         const errorMessage = error.message;
         alert(errorMessage);
       });
+    router.push("/ladder");
   };
 
   return (
@@ -68,7 +71,7 @@ const LoginDesktop = () => {
           size="large"
           variant="contained"
           fullWidth
-          onClick={handleClick}
+          onClick={() => handleClick}
         >
           Login
         </Button>
