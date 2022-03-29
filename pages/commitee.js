@@ -12,7 +12,6 @@ const CommiteeCard = (props) => {
 
   return (
     <div style={{ backgroundColor: "#4a4a4a", width: "100%", height: "400px" }}>
-      
       <div
         style={{
           height: "70%",
@@ -112,7 +111,7 @@ const CommiteeDesktop = (props) => {
             </Grid>
             <Grid item xs={4}>
               <CommiteeCard
-                src="/ian.jpg"
+                src="/ian1.jpg"
                 name="Ian Oosthuizen"
                 description="Development"
               />
@@ -182,8 +181,8 @@ const CommiteeMobile = (props) => {
             </Grid>
             <Grid item xs={12}>
               <CommiteeCard
-                src="/richard.png"
-                name="Yan Oosthuizen"
+                src="/ian1.jpg"
+                name="Ian Oosthuizen"
                 description="Development"
               />
             </Grid>
